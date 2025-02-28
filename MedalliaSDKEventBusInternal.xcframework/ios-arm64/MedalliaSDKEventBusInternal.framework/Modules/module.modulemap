@@ -1,0 +1,8 @@
+framework module MedalliaSDKEventBusInternal {
+    umbrella header "MedalliaSDKEventBusInternal.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
