@@ -14,23 +14,11 @@
 		</data>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/MedalliaSDKEventBusInternal</key>
 		<data>
-		AlWRlMr4b0GWWddAv8SRmvzX/ZI=
+		0jRLKQN7/UDWpYf5Ja40Mj7jrTw=
 		</data>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
 		<data>
 		PZ000WiPwJrdhM06ehpMHSmIcsc=
-		</data>
-		<key>ios-arm64/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Info.plist</key>
-		<data>
-		E7DQRmV1D9f9rI4T/PCOJiYzclw=
-		</data>
-		<key>ios-arm64/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Resources/DWARF/MedalliaSDKEventBusInternal</key>
-		<data>
-		565m4vkt6bOb2alPHVxVFOw7Y+s=
-		</data>
-		<key>ios-arm64/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Resources/Relocations/aarch64/MedalliaSDKEventBusInternal.yml</key>
-		<data>
-		eXdA8OnVd40TvGQ9FBl8Qn4iAL8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Headers/MedalliaSDKEventBusInternal.h</key>
 		<data>
@@ -42,19 +30,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/MedalliaSDKEventBusInternal</key>
 		<data>
-		VeC70FKL4/V0MLRovr2J7J0nfZM=
+		Uh5LhL2YuNZXYbxmEptfVCVXoeA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
 		<data>
 		P3uNi50hWEoj2nZOaesXm3AVcNI=
-		</data>
-		<key>ios-arm64_x86_64-simulator/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Info.plist</key>
-		<data>
-		E7DQRmV1D9f9rI4T/PCOJiYzclw=
-		</data>
-		<key>ios-arm64_x86_64-simulator/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Resources/DWARF/MedalliaSDKEventBusInternal</key>
-		<data>
-		8MF9IDt8JVA/dwYpbdo4E69OTeU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -85,11 +65,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AlWRlMr4b0GWWddAv8SRmvzX/ZI=
+			0jRLKQN7/UDWpYf5Ja40Mj7jrTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AA+gCIRlzIAW9BMBMcTEzM6zcdtX7hqF6D7A2qWsiak=
+			czNU56bO7RfhBwiu9D2WWagTL5Tuw2jkXd34MvSqYgE=
 			</data>
 		</dict>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
@@ -101,39 +81,6 @@
 			<key>hash2</key>
 			<data>
 			z2LlGQgr9xjMMJ/yw55M7v6T2vxEMiVaCuc2R87ejoo=
-			</data>
-		</dict>
-		<key>ios-arm64/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			E7DQRmV1D9f9rI4T/PCOJiYzclw=
-			</data>
-			<key>hash2</key>
-			<data>
-			AicTfPFbkgmbOetHULmLE56fi+/sllAK59RyqG5/Z7E=
-			</data>
-		</dict>
-		<key>ios-arm64/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Resources/DWARF/MedalliaSDKEventBusInternal</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			565m4vkt6bOb2alPHVxVFOw7Y+s=
-			</data>
-			<key>hash2</key>
-			<data>
-			EC1BdDPhLJVUVAPGYO98cU1+GtzFah4asMfE8fbBetE=
-			</data>
-		</dict>
-		<key>ios-arm64/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Resources/Relocations/aarch64/MedalliaSDKEventBusInternal.yml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eXdA8OnVd40TvGQ9FBl8Qn4iAL8=
-			</data>
-			<key>hash2</key>
-			<data>
-			6buVmLmCpqmcS5ZUeRZKCNzJG7svLM4ZfEmvN0lamZ4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Headers/MedalliaSDKEventBusInternal.h</key>
@@ -162,11 +109,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VeC70FKL4/V0MLRovr2J7J0nfZM=
+			Uh5LhL2YuNZXYbxmEptfVCVXoeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZqdRD2OO7nVyYSX+bcGhHc9SIcswH20YdRHpTFtdHzA=
+			/uhD677vo0WOC22LRAxqGM5z7xNucmG+TYsomKK5ndU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
@@ -178,28 +125,6 @@
 			<key>hash2</key>
 			<data>
 			iTEUsYicbfdYz7twQyeYthpdOOz4lzkWvSCJ+OGsT9U=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			E7DQRmV1D9f9rI4T/PCOJiYzclw=
-			</data>
-			<key>hash2</key>
-			<data>
-			AicTfPFbkgmbOetHULmLE56fi+/sllAK59RyqG5/Z7E=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/dSYMs/MedalliaSDKEventBusInternal.framework.dSYM/Contents/Resources/DWARF/MedalliaSDKEventBusInternal</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8MF9IDt8JVA/dwYpbdo4E69OTeU=
-			</data>
-			<key>hash2</key>
-			<data>
-			OXl8OZmfOth65qcCqRREhHYKDBCGcO02rqTQUt4UKbo=
 			</data>
 		</dict>
 	</dict>
