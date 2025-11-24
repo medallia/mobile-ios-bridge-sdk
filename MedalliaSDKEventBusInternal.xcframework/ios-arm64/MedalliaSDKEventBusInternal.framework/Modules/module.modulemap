@@ -1,4 +1,4 @@
-framework module MedalliaSDKEventBusInternal {
+framework module "MedalliaSDKEventBusInternal" {
     umbrella header "MedalliaSDKEventBusInternal.h"
 
     export *
