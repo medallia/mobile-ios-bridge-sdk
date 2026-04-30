@@ -336,14 +336,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DFFormSubmitted")))
 @interface MSDKEBIDFFormSubmitted : MSDKEBIDFEvent<MSDKEBIFormSubmission<id> *>
 - (instancetype)initWithPayload:(MSDKEBIFormSubmission<id> *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing a specific event for form submission.
- *
- * This event carries a [payload] of type [FormSubmission], which contains details about the submitted form.
- *
- * @property payload The form submission details associated with the event.
- */
 - (MSDKEBIDFFormSubmitted *)doCopyPayload:(MSDKEBIFormSubmission<id> *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -387,14 +379,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DFSubmitFeedback")))
 @interface MSDKEBIDFSubmitFeedback : MSDKEBIDFEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing a specific event for submitting feedback.
- *
- * This event carries a [payload] of type [String], which represents the feedback content.
- *
- * @property payload The feedback content associated with the event.
- */
 - (MSDKEBIDFSubmitFeedback *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -462,14 +446,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DXALeadIdUpdated")))
 @interface MSDKEBIDXALeadIdUpdated : MSDKEBIDXAEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing an event that indicates an update to the lead ID.
- *
- * This event carries a [payload] of type [String], which represents the updated lead ID.
- *
- * @property payload The updated lead ID associated with this event.
- */
 - (MSDKEBIDXALeadIdUpdated *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -513,14 +489,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DXAScreenNameUpdated")))
 @interface MSDKEBIDXAScreenNameUpdated : MSDKEBIDXAEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing an event that indicates an update to the screen name.
- *
- * This event carries a [payload] of type [String], which represents the updated screen name.
- *
- * @property payload The updated screen name associated with this event.
- */
 - (MSDKEBIDXAScreenNameUpdated *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -564,14 +532,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("DXASessionIdUpdated")))
 @interface MSDKEBIDXASessionIdUpdated : MSDKEBIDXAEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing an event that indicates an update to the session ID.
- *
- * This event carries a [payload] of type [String], which represents the updated session ID.
- *
- * @property payload The updated session ID associated with this event.
- */
 - (MSDKEBIDXASessionIdUpdated *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -639,14 +599,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MXOInteractionNameUpdated")))
 @interface MSDKEBIMXOInteractionNameUpdated : MSDKEBIMXOEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing an event that indicates an update to the Interaction name.
- *
- * This event carries a [payload] of type [String], which represents the updated Interaction name.
- *
- * @property payload The updated Interaction name with this event.
- */
 - (MSDKEBIMXOInteractionNameUpdated *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -690,14 +642,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MXOTidUpdated")))
 @interface MSDKEBIMXOTidUpdated : MSDKEBIMXOEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing an event that indicates an update to the TID (Transaction ID).
- *
- * This event carries a [payload] of type [String], which represents the updated TID.
- *
- * @property payload The updated Transaction ID (TID) associated with this event.
- */
 - (MSDKEBIMXOTidUpdated *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -741,14 +685,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MXOWebviewUrlUpdated")))
 @interface MSDKEBIMXOWebviewUrlUpdated : MSDKEBIMXOEvent<NSString *>
 - (instancetype)initWithPayload:(NSString *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A data class representing an event that indicates an update to the Webview URL.
- *
- * This event carries a [payload] of type [String], which represents the updated Webview URL.
- *
- * @property payload The updated Webview URL with this event.
- */
 - (MSDKEBIMXOWebviewUrlUpdated *)doCopyPayload:(NSString *)payload __attribute__((swift_name("doCopy(payload:)")));
 
 /**
@@ -810,13 +746,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldCheckboxes")))
 @interface MSDKEBIFormFieldCheckboxes : MSDKEBIFormField<NSArray<NSString *> *>
 - (instancetype)initWithName:(NSString *)name value:(NSArray<NSString *> * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A checkboxes field.
- *
- * @property name The name of the field.
- * @property value The selected values.
- */
 - (MSDKEBIFormFieldCheckboxes *)doCopyName:(NSString *)name value:(NSArray<NSString *> * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -858,13 +787,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldDropdown")))
 @interface MSDKEBIFormFieldDropdown : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A dropdown field.
- *
- * @property name The name of the field.
- * @property value The selected value.
- */
 - (MSDKEBIFormFieldDropdown *)doCopyName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -906,13 +828,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldEmail")))
 @interface MSDKEBIFormFieldEmail : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * An email field.
- *
- * @property name The name of the field.
- * @property value The value of the field.
- */
 - (MSDKEBIFormFieldEmail *)doCopyName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -953,12 +868,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldImage")))
 @interface MSDKEBIFormFieldImage : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name __attribute__((swift_name("init(name:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * An image field.
- *
- * @property name The name of the field.
- */
 - (MSDKEBIFormFieldImage *)doCopyName:(NSString *)name __attribute__((swift_name("doCopy(name:)")));
 
 /**
@@ -997,13 +906,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldNPS")))
 @interface MSDKEBIFormFieldNPS : MSDKEBIFormField<MSDKEBIInt *>
 - (instancetype)initWithName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * An NPS (Net Promoter Score) field.
- *
- * @property name The name of the field.
- * @property value The NPS value.
- */
 - (MSDKEBIFormFieldNPS *)doCopyName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1045,13 +947,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldRadioButtons")))
 @interface MSDKEBIFormFieldRadioButtons : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A radio buttons field.
- *
- * @property name The name of the field.
- * @property value The selected value.
- */
 - (MSDKEBIFormFieldRadioButtons *)doCopyName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1093,13 +988,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldRating")))
 @interface MSDKEBIFormFieldRating : MSDKEBIFormField<MSDKEBIInt *>
 - (instancetype)initWithName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A generic rating field (From 1 to 5).
- *
- * @property name The name of the field.
- * @property value The rating value.
- */
 - (MSDKEBIFormFieldRating *)doCopyName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1141,13 +1029,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldRating0to10")))
 @interface MSDKEBIFormFieldRating0to10 : MSDKEBIFormField<MSDKEBIInt *>
 - (instancetype)initWithName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A rating field from 0 to 10.
- *
- * @property name The name of the field.
- * @property value The rating value.
- */
 - (MSDKEBIFormFieldRating0to10 *)doCopyName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1189,13 +1070,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldRating1to10")))
 @interface MSDKEBIFormFieldRating1to10 : MSDKEBIFormField<MSDKEBIInt *>
 - (instancetype)initWithName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A rating field from 1 to 10.
- *
- * @property name The name of the field.
- * @property value The rating value.
- */
 - (MSDKEBIFormFieldRating1to10 *)doCopyName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1237,13 +1111,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldRating1to7")))
 @interface MSDKEBIFormFieldRating1to7 : MSDKEBIFormField<MSDKEBIInt *>
 - (instancetype)initWithName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A rating field from 1 to 7.
- *
- * @property name The name of the field.
- * @property value The rating value.
- */
 - (MSDKEBIFormFieldRating1to7 *)doCopyName:(NSString *)name value:(MSDKEBIInt * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1284,12 +1151,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldText")))
 @interface MSDKEBIFormFieldText : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name __attribute__((swift_name("init(name:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A text field.
- *
- * @property name The name of the field.
- */
 - (MSDKEBIFormFieldText *)doCopyName:(NSString *)name __attribute__((swift_name("doCopy(name:)")));
 
 /**
@@ -1328,13 +1189,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldTextArea")))
 @interface MSDKEBIFormFieldTextArea : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A text area field.
- *
- * @property name The name of the field.
- * @property value The value of the field.
- */
 - (MSDKEBIFormFieldTextArea *)doCopyName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1376,13 +1230,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormFieldTextInput")))
 @interface MSDKEBIFormFieldTextInput : MSDKEBIFormField<NSString *>
 - (instancetype)initWithName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * A text input field.
- *
- * @property name The name of the field.
- * @property value The value of the field.
- */
 - (MSDKEBIFormFieldTextInput *)doCopyName:(NSString *)name value:(NSString * _Nullable)value __attribute__((swift_name("doCopy(name:value:)")));
 
 /**
@@ -1482,17 +1329,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FormSubmission")))
 @interface MSDKEBIFormSubmission<T> : MSDKEBIBase
 - (instancetype)initWithFeedbackUuid:(NSString *)feedbackUuid ccid:(NSString *)ccid formId:(NSString *)formId formType:(NSString *)formType formFields:(id)formFields __attribute__((swift_name("init(feedbackUuid:ccid:formId:formType:formFields:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * Represents a submission of a form, containing feedback and form details.
- *
- * @param T The type of form field.
- * @property feedbackUuid Unique identifier for the feedback - Generated by the DF Server.
- * @property ccid Client correlation identifier - Generated by the DF SDK.
- * @property formId Unique identifier for the form.
- * @property formType Type of the form.
- * @property formFields Iterable collection of form fields.
- */
 - (MSDKEBIFormSubmission<T> *)doCopyFeedbackUuid:(NSString *)feedbackUuid ccid:(NSString *)ccid formId:(NSString *)formId formType:(NSString *)formType formFields:(id)formFields __attribute__((swift_name("doCopy(feedbackUuid:ccid:formId:formType:formFields:)")));
 
 /**
