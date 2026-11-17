@@ -149,6 +149,11 @@ __attribute__((swift_name("KotlinBoolean")))
  * Represents a lock that can be locked and unlocked.
  *
  * Used mainly for synchronization purposes.
+ *
+ * Implementations MUST be **reentrant**: a thread that already holds the lock is
+ * able to acquire it again without deadlocking, and must call [unlock] once per
+ * [lock] call to fully release it. Both platform implementations honour this
+ * contract (Android via `ReentrantLock`, iOS via `NSRecursiveLock`).
  */
 __attribute__((swift_name("Lockable")))
 @protocol MSDKEBILockable
@@ -271,12 +276,32 @@ __attribute__((swift_name("Subscriber")))
 
 /**
  * onEvent - receive new event
+ *
+ * Always delivered after this subscriber's [onSubscribe] has returned. It is
+ * invoked without any bus lock held, so it is safe to call [EventBus.emit] or
+ * [EventBus.subscribe] from this callback without deadlocking. Because no lock
+ * is held during delivery, [onEvent] is not serialized: it may be invoked
+ * concurrently (across threads) or re-entrantly for the same subscriber, so
+ * implementations that require ordering must synchronize internally.
+ *
+ * Events emitted while [onSubscribe] is running are buffered and delivered, in
+ * emit order, right after it returns. Only a bounded number of the newest events
+ * are kept (the same limit as the [onSubscribe] stack); older ones are dropped,
+ * so keep [onSubscribe] short. Events emitted while that backlog is
+ * being delivered are not held back: like any [EventBus.emit] from inside
+ * [onEvent] they are delivered re-entrantly, and like any emit from another
+ * thread they may interleave with the backlog.
+ *
  * @param event The event that was emitted to the event bus.
  */
 - (void)onEventEvent:(id<MSDKEBIEvent>)event __attribute__((swift_name("onEvent(event:)")));
 
 /**
  * onSubscribe - receive eventsQueue and eventsStack for new subscriber
+ *
+ * Invoked without any bus lock held, so it is safe to call [EventBus.emit] or
+ * [EventBus.subscribe] from this callback without deadlocking. [onEvent] is
+ * not delivered to this subscriber until after [onSubscribe] returns.
  *
  * @param queue - list of the first N events that were emitted to the event bus in chronological order.
  * @param stack - list of the last N events that were emitted to the event bus in reverse chronological order.
@@ -1389,8 +1414,8 @@ __attribute__((swift_name("IOSLockKt")))
 /**
  * Provides a [Lockable] instance for the iOS platform.
  *
- * This function returns an instance of [IOSLock], which uses [NSLock] internally
- * to manage synchronization.
+ * This function returns an instance of [IOSLock], which uses [NSRecursiveLock]
+ * internally to manage synchronization.
  *
  * @return A platform-specific implementation of [Lockable] for iOS.
  */
@@ -1404,10 +1429,10 @@ __attribute__((swift_name("IOStimestampKt")))
 /**
  * Provides the current timestamp for the iOS platform.
  *
- * This function retrieves the current time as the number of seconds since the Unix epoch
+ * This function retrieves the current time as the number of milliseconds since the Unix epoch
  * (January 1, 1970, 00:00:00 UTC) and converts it to a [Long].
  *
- * @return The current timestamp in seconds since the Unix epoch.
+ * @return The current timestamp in milliseconds since the Unix epoch.
  */
 + (int64_t)getTimestamp __attribute__((swift_name("getTimestamp()")));
 @end
