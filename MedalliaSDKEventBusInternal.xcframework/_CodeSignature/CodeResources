@@ -10,11 +10,11 @@
 		</data>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/Info.plist</key>
 		<data>
-		8L7x9SdwiI7n+3FRKDwIWOsw1Yc=
+		/AwKFXBebQ+H4m8bhfFHjdH8dNU=
 		</data>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/MedalliaSDKEventBusInternal</key>
 		<data>
-		SPnAofUNdbmr7ezCX/J/NMNgXsQ=
+		TdBIk4i6qCnY7nnrF6v/pEqBHdk=
 		</data>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Info.plist</key>
 		<data>
-		kbFySE9njHT6CUGNiQoH3Z+KLYE=
+		5YNaEdw5TvXvNF9TP4Pm6BjQnws=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/MedalliaSDKEventBusInternal</key>
 		<data>
-		c7YfsnuQxSXSGiMiLUBd/tlpcMM=
+		gNJrQHxW+4AUlZtpfl5y0YZ/gts=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
 		<data>
@@ -50,14 +50,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZgkAU+hl1T9s+a3xzR6v2lVt27HTe0Hekd91kM6GlEs=
+			Ru0wEGiYBa9kefeKCJ8ocR7hPEQtqUqyC+C9vtnXf7Y=
 			</data>
 		</dict>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/MedalliaSDKEventBusInternal</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FZSodyaI+AvstR6iC/voeYUwcrwteFY3s2ytbZkTHX4=
+			tTbQS/Kd64Zry1S8ijMscpTIF8DyBB/zqEOh+xyWtdw=
 			</data>
 		</dict>
 		<key>ios-arm64/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			klnrK13B8eQB2MBAp9qfHYjxCa5Mh8tg4JE04yA6ALs=
+			zwMt96z6HSimeRir4XATb8OBWW7fdQqjtNhTggST+VE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/MedalliaSDKEventBusInternal</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RzxowUHoLNGpXbgVBMshqMttovjdHSa5s0y1aeW43Z0=
+			VWs2L4DCuW5ADGrdLD75WB0ecjumqE7+0GR7zu87Lew=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MedalliaSDKEventBusInternal.framework/Modules/module.modulemap</key>
